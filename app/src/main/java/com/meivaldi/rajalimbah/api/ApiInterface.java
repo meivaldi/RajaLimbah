@@ -16,4 +16,8 @@ public interface ApiInterface {
                                    @Field("hp_perusahaan") String hp_perusahaan, @Field("fax_perusahaan") String fax,
                                    @Field("kbli") String kbli, @Field("jenis_perusahaan") String jenis);
 
+    @FormUrlEncoded
+    @POST("login.php")
+    Call<ApiResponse> loginUser(@Field("username") String username, @Field("password") String password);
+
 }
