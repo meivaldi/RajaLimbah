@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">RajaLimbah</string>
+    <string name="login">Login</string>
+    <string name="username_hint">Username</string>
+    <string name="password_hint">Password</string>
+    <string name="register_label">Daftar Akun</string>
+    <string name="forgot_pass_label">Lupa Password?</string>
+    <string name="personLbl">Data Personal</string>
+    <string name="name_hint">Nama Pendaftar</string>
+    <string name="email_hint">Email Pendaftar</string>
+    <string name="email_confirm_hint">Konfirmasi Email</string>
+    <string name="companyLbl">Data Perusahaan</string>
+    <string name="company_name_hint">Nama Perusahaan</string>
+    <string name="company_phone_hint">Nomor Telpon Perusahaan</string>
+    <string name="company_fax_hint">Nomor Fax Perusahaan</string>
+    <string name="kbli_hint">Kode KBLI</string>
+    <string name="jenis_hint">Jenis Industri</string>
+    <string name="fileLbl">Filename</string>
+    <string name="formulir">Formulir Registrasi</string>
+    <string name="upload_formulir">Upload Formulir</string>
+    <string name="downloadFormulir">Download Formulir</string>
+    <string name="title_hint">Jabatan</string>
+    <string name="phone_hint">Nomor HP</string>
+    <string name="daftar_akun">Daftar Akun</string>
+</resources>
