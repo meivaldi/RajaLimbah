@@ -2,6 +2,7 @@ package com.meivaldi.rajalimbah;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
@@ -10,6 +11,16 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.google.gson.Gson;
+import com.meivaldi.rajalimbah.api.ApiClient;
+import com.meivaldi.rajalimbah.api.ApiInterface;
+import com.meivaldi.rajalimbah.model.ApiResponse;
+import com.meivaldi.rajalimbah.model.User;
+
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
 
 public class RegisterActivity extends AppCompatActivity {
 
@@ -81,11 +92,39 @@ public class RegisterActivity extends AppCompatActivity {
                 } else if (!email.isEmpty() && !emailConfirm.isEmpty() && !email.equals(emailConfirm)) {
                     Toast.makeText(getApplicationContext(), "Email Tidak Sama!", Toast.LENGTH_SHORT).show();
                 } else {
-                    Toast.makeText(getApplicationContext(), "Sukses", Toast.LENGTH_SHORT).show();
+                    ApiInterface apiService = ApiClient.getClient().create(ApiInterface.class);
+                    Call<ApiResponse> call = apiService.registerUser(name,
+                            email,
+                            phone,
+                            title,
+                            company,
+                            companyPhone,
+                            companyFax,
+                            kbli,
+                            companyType);
+
+                    call.enqueue(new Callback<ApiResponse>() {
+                        @Override
+                        public void onResponse(Call<ApiResponse> call, Response<ApiResponse> response) {
+                            ApiResponse res = response.body();
+                            if (!res.isStatus()) {
+                                Toast.makeText(getApplicationContext(), res.getMessage(), Toast.LENGTH_SHORT).show();
+                                finish();
+
+                                startActivity(new Intent(getApplicationContext(), MainActivity.class));
+                            } else {
+                                Toast.makeText(getApplicationContext(), res.getMessage(), Toast.LENGTH_SHORT).show();
+                            }
+                        }
+
+                        @Override
+                        public void onFailure(Call<ApiResponse> call, Throwable t) {
+                            Toast.makeText(getApplicationContext(), "Registrasi Gagal!", Toast.LENGTH_SHORT).show();
+                        }
+                    });
                 }
             }
         });
-
     }
 
     @Override

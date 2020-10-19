@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "456036055386",
+    "firebase_url": "https://limbah-6d5da.firebaseio.com",
+    "project_id": "limbah-6d5da",
+    "storage_bucket": "limbah-6d5da.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:456036055386:android:cd43740645c170bf8e5b63",
+        "android_client_info": {
+          "package_name": "com.meivaldi.rajalimbah"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "456036055386-4o759nt7gobcrdtuusp9o3u8qa79obtq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyATtdSTx6GLjCiA8QmsaAvE2RnVrJaX8Iw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "456036055386-4o759nt7gobcrdtuusp9o3u8qa79obtq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
