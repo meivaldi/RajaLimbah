@@ -1,6 +1,7 @@
 package com.meivaldi.rajalimbah.api;
 
 import com.meivaldi.rajalimbah.model.ApiResponse;
+import com.meivaldi.rajalimbah.model.UserResponse;
 
 import retrofit2.Call;
 import retrofit2.http.FormUrlEncoded;
@@ -18,6 +19,6 @@ public interface ApiInterface {
 
     @FormUrlEncoded
     @POST("login.php")
-    Call<ApiResponse> loginUser(@Field("username") String username, @Field("password") String password);
+    Call<UserResponse> loginUser(@Field("username") String username, @Field("password") String password);
 
 }
