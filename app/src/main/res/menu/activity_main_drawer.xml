@@ -24,5 +24,10 @@
             android:id="@+id/nav_data"
             android:icon="@drawable/baseline_file_copy_black_18"
             android:title="@string/menu_data" />
+
+        <item
+            android:id="@+id/nav_pengelolaan"
+            android:icon="@drawable/baseline_miscellaneous_services_black_18"
+            android:title="@string/menu_pengelolaan" />
     </group>
 </menu>

@@ -40,4 +40,6 @@
     <string name="action_logout">Logout</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="menu_pengelolaan">Pengelolaan Limbah</string>
+    <string name="empty_lbl">Belum ada data</string>
 </resources>

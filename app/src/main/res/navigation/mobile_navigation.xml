@@ -10,10 +10,35 @@
         android:name="com.meivaldi.rajalimbah.ui.home.HomeFragment"
         android:label="@string/menu_home"
         tools:layout="@layout/fragment_home" />
+
     <fragment
-        android:id="@+id/profile"
+        android:id="@+id/nav_profile"
         android:name="com.meivaldi.rajalimbah.ui.profile.Profile"
-        android:label="fragment_profile"
+        android:label="@string/menu_profile"
         tools:layout="@layout/fragment_profile" />
+
+    <fragment
+        android:id="@+id/nav_permission"
+        android:name="com.meivaldi.rajalimbah.ui.permission.Perizinan"
+        android:label="@string/menu_permission"
+        tools:layout="@layout/fragment_perizinan" />
+
+    <fragment
+        android:id="@+id/nav_contract"
+        android:name="com.meivaldi.rajalimbah.ui.contract.KerjaSama"
+        android:label="@string/menu_contract"
+        tools:layout="@layout/fragment_kerja_sama" />
+
+    <fragment
+        android:id="@+id/nav_data"
+        android:name="com.meivaldi.rajalimbah.ui.data.DataLimbah"
+        android:label="@string/menu_data"
+        tools:layout="@layout/fragment_data_limbah" />
+
+    <fragment
+        android:id="@+id/nav_pengelolaan"
+        android:name="com.meivaldi.rajalimbah.ui.pengelolaan.Pengelolaan"
+        android:label="@string/menu_pengelolaan"
+        tools:layout="@layout/pengelolaan_fragment" />
 
 </navigation>

@@ -185,7 +185,7 @@ public class RegisterActivity extends AppCompatActivity {
                 int lenghOfFile = connection.getContentLength();
                 InputStream input = new BufferedInputStream(url.openStream(), 8192);
 
-                OutputStream output = new FileOutputStream(Environment.getExternalStorageDirectory().toString() + "/formulir.pdf");
+                OutputStream output = new FileOutputStream(Environment.getExternalStorageDirectory() + "/Download/formulir.pdf");
                 byte data[] = new byte[1024];
                 long total = 0;
 
@@ -211,7 +211,7 @@ public class RegisterActivity extends AppCompatActivity {
         protected void onPostExecute(String file_url){
             dismissDialog(progress_bar_type);
 
-            Toast.makeText(getApplicationContext(), "Download Berhasil, " + Environment.getExternalStorageDirectory().toString(), Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplicationContext(), "Download Berhasil, " + Environment.getExternalStorageDirectory(), Toast.LENGTH_SHORT).show();
         }
     }
 
