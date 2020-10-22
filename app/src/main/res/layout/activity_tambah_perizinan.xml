@@ -32,20 +32,8 @@
             android:layout_height="wrap_content"
             android:padding="10dp">
 
-            <TextView
-                android:id="@+id/label"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                android:text="PERIZINAN"
-                android:textColor="@android:color/black"
-                android:textSize="22sp"
-                android:textStyle="bold"
-                android:fontFamily="@font/source" />
-
             <LinearLayout
                 android:id="@+id/view"
-                android:layout_below="@id/label"
                 android:layout_marginTop="16dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

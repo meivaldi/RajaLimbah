@@ -6,223 +6,197 @@
     android:layout_height="match_parent"
     tools:context=".TambahDataLimbah">
 
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar"
-        style="@style/Toolbar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/colorPrimary"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
-
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:scrollbars="none"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar"
-        app:layout_constraintVertical_bias="0.0"
-        tools:layout_editor_absoluteX="38dp">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="10dp">
 
-            <TextView
-                android:id="@+id/label"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                android:text="PROFIL PERUSAHAAN"
-                android:textColor="@android:color/black"
-                android:textSize="22sp"
-                android:textStyle="bold"
-                android:fontFamily="@font/source" />
-
             <LinearLayout
                 android:id="@+id/view"
-                android:layout_below="@id/label"
-                android:layout_marginTop="16dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
                 android:orientation="horizontal"
                 android:weightSum="100">
 
                 <TextView
                     android:layout_width="150dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="20"
-                    android:textSize="18sp"
-                    android:fontFamily="@font/source"
                     android:layout_gravity="center_vertical"
-                    android:text="Nama Perusahaan" />
+                    android:layout_weight="20"
+                    android:fontFamily="@font/source"
+                    android:text="Nama Perusahaan"
+                    android:textSize="18sp" />
 
                 <EditText
-                    android:layout_marginLeft="10dp"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
-                    android:layout_weight="80"/>
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="80" />
 
             </LinearLayout>
 
             <LinearLayout
                 android:id="@+id/view2"
-                android:layout_below="@id/view"
-                android:layout_marginTop="16dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_below="@id/view"
+                android:layout_marginTop="16dp"
                 android:orientation="horizontal"
                 android:weightSum="100">
 
                 <TextView
                     android:layout_width="150dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="20"
-                    android:textSize="18sp"
-                    android:fontFamily="@font/source"
                     android:layout_gravity="center_vertical"
-                    android:text="Jenis Industri" />
+                    android:layout_weight="20"
+                    android:fontFamily="@font/source"
+                    android:text="Jenis Industri"
+                    android:textSize="18sp" />
 
                 <Spinner
-                    android:layout_marginLeft="10dp"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
-                    android:layout_weight="80"/>
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="80" />
 
             </LinearLayout>
 
             <LinearLayout
                 android:id="@+id/view3"
-                android:layout_below="@id/view2"
-                android:layout_marginTop="16dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_below="@id/view2"
+                android:layout_marginTop="16dp"
                 android:orientation="horizontal"
                 android:weightSum="100">
 
                 <TextView
                     android:layout_width="150dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="20"
-                    android:textSize="18sp"
-                    android:fontFamily="@font/source"
                     android:layout_gravity="center_vertical"
-                    android:text="Nomor KBLI" />
+                    android:layout_weight="20"
+                    android:fontFamily="@font/source"
+                    android:text="Nomor KBLI"
+                    android:textSize="18sp" />
 
                 <EditText
-                    android:layout_marginLeft="10dp"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
-                    android:layout_weight="80"/>
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="80" />
 
             </LinearLayout>
 
             <LinearLayout
                 android:id="@+id/view4"
-                android:layout_below="@id/view3"
-                android:layout_marginTop="16dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_below="@id/view3"
+                android:layout_marginTop="16dp"
                 android:orientation="horizontal"
                 android:weightSum="100">
 
                 <TextView
                     android:layout_width="150dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="20"
-                    android:textSize="18sp"
-                    android:fontFamily="@font/source"
                     android:layout_gravity="center_vertical"
-                    android:text="Alamat" />
+                    android:layout_weight="20"
+                    android:fontFamily="@font/source"
+                    android:text="Alamat"
+                    android:textSize="18sp" />
 
                 <EditText
-                    android:layout_marginLeft="10dp"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
-                    android:layout_weight="80"/>
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="80" />
 
             </LinearLayout>
 
             <LinearLayout
                 android:id="@+id/view5"
-                android:layout_below="@id/view4"
-                android:layout_marginTop="16dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_below="@id/view4"
+                android:layout_marginTop="16dp"
                 android:orientation="horizontal"
                 android:weightSum="100">
 
                 <TextView
                     android:layout_width="150dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="20"
-                    android:textSize="18sp"
-                    android:fontFamily="@font/source"
                     android:layout_gravity="center_vertical"
-                    android:text="Kab/Kota" />
+                    android:layout_weight="20"
+                    android:fontFamily="@font/source"
+                    android:text="Kab/Kota"
+                    android:textSize="18sp" />
 
                 <Spinner
-                    android:layout_marginLeft="10dp"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
-                    android:layout_weight="80"/>
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="80" />
 
             </LinearLayout>
 
             <LinearLayout
                 android:id="@+id/view6"
-                android:layout_below="@id/view5"
-                android:layout_marginTop="16dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_below="@id/view5"
+                android:layout_marginTop="16dp"
                 android:orientation="horizontal"
                 android:weightSum="100">
 
                 <TextView
                     android:layout_width="150dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="20"
-                    android:textSize="18sp"
-                    android:fontFamily="@font/source"
                     android:layout_gravity="center_vertical"
-                    android:text="Nomor Telp" />
+                    android:layout_weight="20"
+                    android:fontFamily="@font/source"
+                    android:text="Nomor Telp"
+                    android:textSize="18sp" />
 
                 <EditText
-                    android:layout_marginLeft="10dp"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
-                    android:layout_weight="80"/>
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="80" />
 
             </LinearLayout>
 
             <LinearLayout
                 android:id="@+id/view7"
-                android:layout_below="@id/view6"
-                android:layout_marginTop="16dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_below="@id/view6"
+                android:layout_marginTop="16dp"
                 android:orientation="horizontal"
                 android:weightSum="100">
 
                 <TextView
                     android:layout_width="150dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="20"
-                    android:textSize="18sp"
-                    android:fontFamily="@font/source"
                     android:layout_gravity="center_vertical"
-                    android:text="Nomor Fax" />
+                    android:layout_weight="20"
+                    android:fontFamily="@font/source"
+                    android:text="Nomor Fax"
+                    android:textSize="18sp" />
 
                 <EditText
-                    android:layout_marginLeft="10dp"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
-                    android:layout_weight="80"/>
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="80" />
 
             </LinearLayout>
 
