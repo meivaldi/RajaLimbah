@@ -1,5 +1,6 @@
 package com.meivaldi.rajalimbah.ui.contract;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -13,7 +14,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.meivaldi.rajalimbah.R;
+import com.meivaldi.rajalimbah.TambahKontrak;
 
 public class KerjaSama extends Fragment {
 
@@ -24,13 +27,22 @@ public class KerjaSama extends Fragment {
         kerjaSamaViewModel =
                 ViewModelProviders.of(this).get(KerjaSamaViewModel.class);
         View root = inflater.inflate(R.layout.fragment_kerja_sama, container, false);
-        final TextView textView = root.findViewById(R.id.text_home);
+
         kerjaSamaViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
-                textView.setText(s);
+
             }
         });
+
+        FloatingActionButton tambahData = root.findViewById(R.id.add_contract);
+        tambahData.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getContext(), TambahKontrak.class));
+            }
+        });
+
         return root;
     }
 }

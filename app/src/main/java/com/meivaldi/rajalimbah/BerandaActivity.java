@@ -50,7 +50,7 @@ public class BerandaActivity extends AppCompatActivity {
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
         mAppBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.nav_home, R.id.nav_profile, R.id.nav_permission, R.id.nav_contract, R.id.nav_data, R.id.nav_pengelolaan)
+                R.id.nav_home, R.id.nav_profile, R.id.nav_permission, R.id.nav_contract, R.id.nav_data)
                 .setDrawerLayout(drawer)
                 .build();
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
@@ -92,12 +92,5 @@ public class BerandaActivity extends AppCompatActivity {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
         return NavigationUI.navigateUp(navController, mAppBarConfiguration)
                 || super.onSupportNavigateUp();
-    }
-
-    @Override
-    protected void onPause() {
-        super.onPause();
-
-        finish();
     }
 }

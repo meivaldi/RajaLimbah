@@ -13,10 +13,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".TambahPerizinan"></activity>
+        <activity android:name=".TambahKontrak" />
+        <activity android:name=".TambahDataLimbah" />
         <activity
             android:name=".BerandaActivity"
             android:label="@string/title_activity_beranda"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".RegisterActivity" />
         <activity
             android:name=".MainActivity"

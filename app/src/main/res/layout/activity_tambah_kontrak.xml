@@ -1,10 +1,9 @@
-<?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".TambahDataLimbah">
+    tools:context=".TambahKontrak">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
@@ -38,7 +37,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
-                android:text="PROFIL PERUSAHAAN"
+                android:text="KONTRAK KERJASAMA"
                 android:textColor="@android:color/black"
                 android:textSize="22sp"
                 android:textStyle="bold"
@@ -47,7 +46,7 @@
             <LinearLayout
                 android:id="@+id/view"
                 android:layout_below="@id/label"
-                android:layout_marginTop="16dp"
+                android:layout_marginTop="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
@@ -60,12 +59,13 @@
                     android:textSize="18sp"
                     android:fontFamily="@font/source"
                     android:layout_gravity="center_vertical"
-                    android:text="Nama Perusahaan" />
+                    android:text="Perusahaan Pengelola Lanjut" />
 
                 <EditText
                     android:layout_marginLeft="10dp"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
+                    android:layout_gravity="center"
                     android:layout_weight="80"/>
 
             </LinearLayout>
@@ -73,7 +73,7 @@
             <LinearLayout
                 android:id="@+id/view2"
                 android:layout_below="@id/view"
-                android:layout_marginTop="16dp"
+                android:layout_marginTop="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
@@ -86,7 +86,7 @@
                     android:textSize="18sp"
                     android:fontFamily="@font/source"
                     android:layout_gravity="center_vertical"
-                    android:text="Jenis Industri" />
+                    android:text="Tipe Pengelolaan" />
 
                 <Spinner
                     android:layout_marginLeft="10dp"
@@ -99,7 +99,7 @@
             <LinearLayout
                 android:id="@+id/view3"
                 android:layout_below="@id/view2"
-                android:layout_marginTop="16dp"
+                android:layout_marginTop="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
@@ -112,12 +112,14 @@
                     android:textSize="18sp"
                     android:fontFamily="@font/source"
                     android:layout_gravity="center_vertical"
-                    android:text="Nomor KBLI" />
+                    android:text="Jenis Limbah" />
 
                 <EditText
                     android:layout_marginLeft="10dp"
+                    android:maxLines="10"
+                    android:singleLine="false"
                     android:layout_width="match_parent"
-                    android:layout_height="50dp"
+                    android:layout_height="150dp"
                     android:layout_weight="80"/>
 
             </LinearLayout>
@@ -125,7 +127,7 @@
             <LinearLayout
                 android:id="@+id/view4"
                 android:layout_below="@id/view3"
-                android:layout_marginTop="16dp"
+                android:layout_marginTop="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
@@ -138,93 +140,37 @@
                     android:textSize="18sp"
                     android:fontFamily="@font/source"
                     android:layout_gravity="center_vertical"
-                    android:text="Alamat" />
+                    android:text="Surat Pernyataan Tidak Memiliki Masalah Lingkungan" />
 
-                <EditText
+                <Button
                     android:layout_marginLeft="10dp"
+                    android:maxLines="10"
+                    android:singleLine="false"
+                    android:layout_gravity="center"
+                    android:background="@color/colorPrimaryDark"
                     android:layout_width="match_parent"
-                    android:layout_height="50dp"
-                    android:layout_weight="80"/>
+                    android:layout_height="wrap_content"
+                    android:layout_weight="80"
+                    android:fontFamily="@font/source"
+                    android:text="Upload File"
+                    android:textColor="@android:color/white" />
 
             </LinearLayout>
 
-            <LinearLayout
-                android:id="@+id/view5"
+            <Button
+                android:id="@+id/tambah"
                 android:layout_below="@id/view4"
-                android:layout_marginTop="16dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:weightSum="100">
-
-                <TextView
-                    android:layout_width="150dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="20"
-                    android:textSize="18sp"
-                    android:fontFamily="@font/source"
-                    android:layout_gravity="center_vertical"
-                    android:text="Kab/Kota" />
-
-                <Spinner
-                    android:layout_marginLeft="10dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="50dp"
-                    android:layout_weight="80"/>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:id="@+id/view6"
-                android:layout_below="@id/view5"
-                android:layout_marginTop="16dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:weightSum="100">
-
-                <TextView
-                    android:layout_width="150dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="20"
-                    android:textSize="18sp"
-                    android:fontFamily="@font/source"
-                    android:layout_gravity="center_vertical"
-                    android:text="Nomor Telp" />
-
-                <EditText
-                    android:layout_marginLeft="10dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="50dp"
-                    android:layout_weight="80"/>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:id="@+id/view7"
-                android:layout_below="@id/view6"
-                android:layout_marginTop="16dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:weightSum="100">
-
-                <TextView
-                    android:layout_width="150dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="20"
-                    android:textSize="18sp"
-                    android:fontFamily="@font/source"
-                    android:layout_gravity="center_vertical"
-                    android:text="Nomor Fax" />
-
-                <EditText
-                    android:layout_marginLeft="10dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="50dp"
-                    android:layout_weight="80"/>
-
-            </LinearLayout>
+                android:layout_marginTop="30dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/colorPrimaryDark"
+                android:elevation="10dp"
+                android:text="Tambah Data"
+                android:textColor="@android:color/white"
+                android:fontFamily="@font/source"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp" />
 
         </RelativeLayout>
 

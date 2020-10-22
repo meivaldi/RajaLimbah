@@ -35,10 +35,4 @@
         android:label="@string/menu_data"
         tools:layout="@layout/fragment_data_limbah" />
 
-    <fragment
-        android:id="@+id/nav_pengelolaan"
-        android:name="com.meivaldi.rajalimbah.ui.pengelolaan.Pengelolaan"
-        android:label="@string/menu_pengelolaan"
-        tools:layout="@layout/pengelolaan_fragment" />
-
 </navigation>

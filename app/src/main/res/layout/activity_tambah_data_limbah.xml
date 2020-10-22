@@ -38,7 +38,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
-                android:text="PROFIL PERUSAHAAN"
+                android:text="LIMBAH YANG DIHASILKAN"
                 android:textColor="@android:color/black"
                 android:textSize="22sp"
                 android:textStyle="bold"
@@ -47,7 +47,7 @@
             <LinearLayout
                 android:id="@+id/view"
                 android:layout_below="@id/label"
-                android:layout_marginTop="16dp"
+                android:layout_marginTop="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
@@ -60,33 +60,7 @@
                     android:textSize="18sp"
                     android:fontFamily="@font/source"
                     android:layout_gravity="center_vertical"
-                    android:text="Nama Perusahaan" />
-
-                <EditText
-                    android:layout_marginLeft="10dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="50dp"
-                    android:layout_weight="80"/>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:id="@+id/view2"
-                android:layout_below="@id/view"
-                android:layout_marginTop="16dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:weightSum="100">
-
-                <TextView
-                    android:layout_width="150dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="20"
-                    android:textSize="18sp"
-                    android:fontFamily="@font/source"
-                    android:layout_gravity="center_vertical"
-                    android:text="Jenis Industri" />
+                    android:text="KODE LIMBAH" />
 
                 <Spinner
                     android:layout_marginLeft="10dp"
@@ -97,9 +71,9 @@
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/view3"
-                android:layout_below="@id/view2"
-                android:layout_marginTop="16dp"
+                android:id="@+id/view2"
+                android:layout_below="@id/view"
+                android:layout_marginTop="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
@@ -112,9 +86,35 @@
                     android:textSize="18sp"
                     android:fontFamily="@font/source"
                     android:layout_gravity="center_vertical"
-                    android:text="Nomor KBLI" />
+                    android:text="TANGGAL DIHASILKAN" />
 
-                <EditText
+                <DatePicker
+                    android:layout_marginStart="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="80"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/view3"
+                android:layout_below="@id/view2"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="100">
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="20"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/source"
+                    android:layout_gravity="center_vertical"
+                    android:text="MASA SIMPAN LIMBAH" />
+
+                <Spinner
                     android:layout_marginLeft="10dp"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
@@ -125,7 +125,7 @@
             <LinearLayout
                 android:id="@+id/view4"
                 android:layout_below="@id/view3"
-                android:layout_marginTop="16dp"
+                android:layout_marginTop="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
@@ -138,9 +138,9 @@
                     android:textSize="18sp"
                     android:fontFamily="@font/source"
                     android:layout_gravity="center_vertical"
-                    android:text="Alamat" />
+                    android:text="TPS" />
 
-                <EditText
+                <Spinner
                     android:layout_marginLeft="10dp"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
@@ -151,7 +151,7 @@
             <LinearLayout
                 android:id="@+id/view5"
                 android:layout_below="@id/view4"
-                android:layout_marginTop="16dp"
+                android:layout_marginTop="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
@@ -164,7 +164,7 @@
                     android:textSize="18sp"
                     android:fontFamily="@font/source"
                     android:layout_gravity="center_vertical"
-                    android:text="Kab/Kota" />
+                    android:text="SUMBER LIMBAH" />
 
                 <Spinner
                     android:layout_marginLeft="10dp"
@@ -177,33 +177,41 @@
             <LinearLayout
                 android:id="@+id/view6"
                 android:layout_below="@id/view5"
-                android:layout_marginTop="16dp"
+                android:layout_marginTop="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:weightSum="100">
 
                 <TextView
-                    android:layout_width="150dp"
+                    android:layout_width="105dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="20"
                     android:textSize="18sp"
                     android:fontFamily="@font/source"
                     android:layout_gravity="center_vertical"
-                    android:text="Nomor Telp" />
+                    android:text="JUMLAH DIHASILKAN/MASUK" />
 
                 <EditText
                     android:layout_marginLeft="10dp"
-                    android:layout_width="match_parent"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="30" />
+
+                <Spinner
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="50dp"
+                    android:layout_gravity="center"
                     android:layout_height="50dp"
-                    android:layout_weight="80"/>
+                    android:layout_weight="50"/>
 
             </LinearLayout>
 
             <LinearLayout
                 android:id="@+id/view7"
                 android:layout_below="@id/view6"
-                android:layout_marginTop="16dp"
+                android:layout_marginTop="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
@@ -216,15 +224,31 @@
                     android:textSize="18sp"
                     android:fontFamily="@font/source"
                     android:layout_gravity="center_vertical"
-                    android:text="Nomor Fax" />
+                    android:text="CATATAN" />
 
                 <EditText
                     android:layout_marginLeft="10dp"
                     android:layout_width="match_parent"
-                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_height="150dp"
                     android:layout_weight="80"/>
 
             </LinearLayout>
+
+            <Button
+                android:id="@+id/tambah"
+                android:layout_below="@id/view7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@color/colorPrimaryDark"
+                android:elevation="10dp"
+                android:text="Tambah Data"
+                android:textColor="@android:color/white"
+                android:fontFamily="@font/source"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp" />
+
 
         </RelativeLayout>
 

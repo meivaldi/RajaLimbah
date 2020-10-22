@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <item
+        android:id="@+id/kelola"
+        android:orderInCategory="100"
+        android:icon="@drawable/baseline_miscellaneous_services_black_18"
+        android:title="Kelola Limbah" />
+
+    <item
+        android:id="@+id/hapus"
+        android:orderInCategory="101"
+        android:icon="@drawable/baseline_delete_black_18"
+        android:title="Hapus" />
+</menu>

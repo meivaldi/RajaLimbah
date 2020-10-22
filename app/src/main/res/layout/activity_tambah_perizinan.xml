@@ -1,10 +1,9 @@
-<?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".TambahDataLimbah">
+    tools:context=".TambahPerizinan">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
@@ -38,7 +37,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
-                android:text="PROFIL PERUSAHAAN"
+                android:text="PERIZINAN"
                 android:textColor="@android:color/black"
                 android:textSize="22sp"
                 android:textStyle="bold"
@@ -60,12 +59,13 @@
                     android:textSize="18sp"
                     android:fontFamily="@font/source"
                     android:layout_gravity="center_vertical"
-                    android:text="Nama Perusahaan" />
+                    android:text="Jenis Perizinan" />
 
-                <EditText
+                <Spinner
                     android:layout_marginLeft="10dp"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
+                    android:layout_gravity="center"
                     android:layout_weight="80"/>
 
             </LinearLayout>
@@ -86,9 +86,9 @@
                     android:textSize="18sp"
                     android:fontFamily="@font/source"
                     android:layout_gravity="center_vertical"
-                    android:text="Jenis Industri" />
+                    android:text="No. Surat Keputusan" />
 
-                <Spinner
+                <EditText
                     android:layout_marginLeft="10dp"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
@@ -112,14 +112,13 @@
                     android:textSize="18sp"
                     android:fontFamily="@font/source"
                     android:layout_gravity="center_vertical"
-                    android:text="Nomor KBLI" />
+                    android:text="Tanggal Terbit Izin" />
 
-                <EditText
-                    android:layout_marginLeft="10dp"
+                <DatePicker
+                    android:layout_marginStart="10dp"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
                     android:layout_weight="80"/>
-
             </LinearLayout>
 
             <LinearLayout
@@ -132,19 +131,27 @@
                 android:weightSum="100">
 
                 <TextView
-                    android:layout_width="150dp"
+                    android:layout_width="105dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="20"
                     android:textSize="18sp"
                     android:fontFamily="@font/source"
                     android:layout_gravity="center_vertical"
-                    android:text="Alamat" />
+                    android:text="Masa Berlaku Izin" />
 
                 <EditText
                     android:layout_marginLeft="10dp"
-                    android:layout_width="match_parent"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="30" />
+
+                <Spinner
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="50dp"
+                    android:layout_gravity="center"
                     android:layout_height="50dp"
-                    android:layout_weight="80"/>
+                    android:layout_weight="50"/>
 
             </LinearLayout>
 
@@ -164,67 +171,37 @@
                     android:textSize="18sp"
                     android:fontFamily="@font/source"
                     android:layout_gravity="center_vertical"
-                    android:text="Kab/Kota" />
+                    android:text="Lampiran Dokumen" />
 
-                <Spinner
+                <Button
                     android:layout_marginLeft="10dp"
+                    android:maxLines="10"
+                    android:singleLine="false"
+                    android:layout_gravity="center"
+                    android:background="@color/colorPrimaryDark"
                     android:layout_width="match_parent"
-                    android:layout_height="50dp"
-                    android:layout_weight="80"/>
+                    android:layout_height="wrap_content"
+                    android:layout_weight="80"
+                    android:fontFamily="@font/source"
+                    android:text="Upload File"
+                    android:textColor="@android:color/white" />
 
             </LinearLayout>
 
-            <LinearLayout
-                android:id="@+id/view6"
+            <Button
+                android:id="@+id/tambah"
                 android:layout_below="@id/view5"
-                android:layout_marginTop="16dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:weightSum="100">
-
-                <TextView
-                    android:layout_width="150dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="20"
-                    android:textSize="18sp"
-                    android:fontFamily="@font/source"
-                    android:layout_gravity="center_vertical"
-                    android:text="Nomor Telp" />
-
-                <EditText
-                    android:layout_marginLeft="10dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="50dp"
-                    android:layout_weight="80"/>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:id="@+id/view7"
-                android:layout_below="@id/view6"
-                android:layout_marginTop="16dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:weightSum="100">
-
-                <TextView
-                    android:layout_width="150dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="20"
-                    android:textSize="18sp"
-                    android:fontFamily="@font/source"
-                    android:layout_gravity="center_vertical"
-                    android:text="Nomor Fax" />
-
-                <EditText
-                    android:layout_marginLeft="10dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="50dp"
-                    android:layout_weight="80"/>
-
-            </LinearLayout>
+                android:layout_marginTop="30dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/colorPrimaryDark"
+                android:elevation="10dp"
+                android:text="Tambah Data"
+                android:textColor="@android:color/white"
+                android:fontFamily="@font/source"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp" />
 
         </RelativeLayout>
 
