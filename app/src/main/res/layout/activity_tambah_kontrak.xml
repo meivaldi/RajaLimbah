@@ -50,6 +50,7 @@
                     android:text="Perusahaan Pengelola Lanjut" />
 
                 <EditText
+                    android:id="@+id/perusahaanET"
                     android:layout_marginLeft="10dp"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
@@ -77,7 +78,8 @@
                     android:text="Tipe Pengelolaan" />
 
                 <Spinner
-                    android:layout_marginLeft="10dp"
+                    android:id="@+id/tipeSP"
+                    android:layout_marginStart="10dp"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
                     android:layout_weight="80"/>
@@ -103,7 +105,8 @@
                     android:text="Jenis Limbah" />
 
                 <EditText
-                    android:layout_marginLeft="10dp"
+                    android:id="@+id/jenisET"
+                    android:layout_marginStart="10dp"
                     android:maxLines="10"
                     android:singleLine="false"
                     android:layout_width="match_parent"

@@ -15,7 +15,6 @@ import android.widget.Toast;
 
 import com.meivaldi.rajalimbah.api.ApiClient;
 import com.meivaldi.rajalimbah.api.ApiInterface;
-import com.meivaldi.rajalimbah.model.ApiResponse;
 import com.meivaldi.rajalimbah.model.UserResponse;
 
 import retrofit2.Call;
@@ -81,6 +80,7 @@ public class MainActivity extends AppCompatActivity {
                                 SharedPreferences.Editor editor = pref.edit();
 
                                 editor.putBoolean("isLogin", true);
+                                editor.putInt("uid", res.getUid());
                                 editor.putString("name", res.getName());
                                 editor.putString("email", res.getEmail());
 

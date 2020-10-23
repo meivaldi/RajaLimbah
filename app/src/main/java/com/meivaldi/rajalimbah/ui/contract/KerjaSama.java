@@ -12,8 +12,6 @@ import androidx.lifecycle.ViewModelProviders;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
-
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.meivaldi.rajalimbah.R;
 import com.meivaldi.rajalimbah.TambahKontrak;
@@ -21,7 +19,6 @@ import com.meivaldi.rajalimbah.TambahKontrak;
 public class KerjaSama extends Fragment {
 
     private KerjaSamaViewModel kerjaSamaViewModel;
-
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
         kerjaSamaViewModel =

@@ -4,6 +4,9 @@ import com.google.gson.annotations.SerializedName;
 
 public class UserResponse {
 
+    @SerializedName("uid")
+    private int uid;
+
     @SerializedName("status")
     private boolean status;
 
@@ -16,11 +19,20 @@ public class UserResponse {
     @SerializedName("email")
     private String email;
 
-    public UserResponse(boolean status, String message, String name, String email) {
+    public UserResponse(int uid, boolean status, String message, String name, String email) {
+        this.uid = uid;
         this.status = status;
         this.message = message;
         this.name = name;
         this.email = email;
+    }
+
+    public int getUid() {
+        return uid;
+    }
+
+    public void setUid(int uid) {
+        this.uid = uid;
     }
 
     public boolean isStatus() {

@@ -50,7 +50,8 @@
                     android:text="Jenis Perizinan" />
 
                 <Spinner
-                    android:layout_marginLeft="10dp"
+                    android:id="@+id/jenisSP"
+                    android:layout_marginStart="10dp"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
                     android:layout_gravity="center"
@@ -77,7 +78,8 @@
                     android:text="No. Surat Keputusan" />
 
                 <EditText
-                    android:layout_marginLeft="10dp"
+                    android:id="@+id/no_surat"
+                    android:layout_marginStart="10dp"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
                     android:layout_weight="80"/>
@@ -102,11 +104,14 @@
                     android:layout_gravity="center_vertical"
                     android:text="Tanggal Terbit Izin" />
 
-                <DatePicker
+                <EditText
+                    android:id="@+id/tanggalET"
                     android:layout_marginStart="10dp"
+                    android:drawableRight="@drawable/baseline_date_range_black_24"
                     android:layout_width="match_parent"
-                    android:layout_height="50dp"
-                    android:layout_weight="80"/>
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="80" />
             </LinearLayout>
 
             <LinearLayout
@@ -128,14 +133,16 @@
                     android:text="Masa Berlaku Izin" />
 
                 <EditText
-                    android:layout_marginLeft="10dp"
+                    android:id="@+id/masa_berlaku"
+                    android:layout_marginStart="10dp"
                     android:layout_width="100dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_weight="30" />
 
                 <Spinner
-                    android:layout_marginLeft="10dp"
+                    android:id="@+id/satuanSp"
+                    android:layout_marginStart="10dp"
                     android:layout_width="50dp"
                     android:layout_gravity="center"
                     android:layout_height="50dp"

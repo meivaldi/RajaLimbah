@@ -78,6 +78,7 @@ public class BerandaActivity extends AppCompatActivity {
             editor.putBoolean("isLogin", false);
             editor.putString("name", "");
             editor.putString("email", "");
+            editor.putInt("uid", 0);
 
             editor.apply();
 

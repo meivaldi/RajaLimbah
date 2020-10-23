@@ -37,9 +37,10 @@
                     android:textSize="18sp" />
 
                 <EditText
+                    android:id="@+id/nameET"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
-                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"
                     android:layout_weight="80" />
 
             </LinearLayout>
@@ -62,10 +63,11 @@
                     android:text="Jenis Industri"
                     android:textSize="18sp" />
 
-                <Spinner
+                <EditText
+                    android:id="@+id/typeET"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
-                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"
                     android:layout_weight="80" />
 
             </LinearLayout>
@@ -89,9 +91,10 @@
                     android:textSize="18sp" />
 
                 <EditText
+                    android:id="@+id/kbliET"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
-                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"
                     android:layout_weight="80" />
 
             </LinearLayout>
@@ -115,9 +118,10 @@
                     android:textSize="18sp" />
 
                 <EditText
+                    android:id="@+id/alamatET"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
-                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"
                     android:layout_weight="80" />
 
             </LinearLayout>
@@ -141,9 +145,10 @@
                     android:textSize="18sp" />
 
                 <Spinner
+                    android:id="@+id/kabSP"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
-                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"
                     android:layout_weight="80" />
 
             </LinearLayout>
@@ -167,9 +172,10 @@
                     android:textSize="18sp" />
 
                 <EditText
+                    android:id="@+id/telpET"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
-                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"
                     android:layout_weight="80" />
 
             </LinearLayout>
@@ -193,12 +199,24 @@
                     android:textSize="18sp" />
 
                 <EditText
+                    android:id="@+id/faxET"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
-                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"
                     android:layout_weight="80" />
 
             </LinearLayout>
+
+            <Button
+                android:id="@+id/update"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark"
+                android:textColor="@android:color/white"
+                android:text="Update Informasi"
+                android:fontFamily="@font/source"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="20dp"/>
 
         </RelativeLayout>
 
