@@ -63,7 +63,8 @@
                     android:text="KODE LIMBAH" />
 
                 <Spinner
-                    android:layout_marginLeft="10dp"
+                    android:id="@+id/kode"
+                    android:layout_marginStart="10dp"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
                     android:layout_weight="80"/>
@@ -88,11 +89,14 @@
                     android:layout_gravity="center_vertical"
                     android:text="TANGGAL DIHASILKAN" />
 
-                <DatePicker
+                <EditText
+                    android:id="@+id/tanggalET"
                     android:layout_marginStart="10dp"
+                    android:drawableRight="@drawable/baseline_date_range_black_24"
                     android:layout_width="match_parent"
-                    android:layout_height="50dp"
-                    android:layout_weight="80"/>
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="80" />
 
             </LinearLayout>
 
@@ -115,7 +119,8 @@
                     android:text="MASA SIMPAN LIMBAH" />
 
                 <Spinner
-                    android:layout_marginLeft="10dp"
+                    android:id="@+id/masa_simpan"
+                    android:layout_marginStart="10dp"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
                     android:layout_weight="80"/>
@@ -141,7 +146,8 @@
                     android:text="TPS" />
 
                 <Spinner
-                    android:layout_marginLeft="10dp"
+                    android:id="@+id/tps"
+                    android:layout_marginStart="10dp"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
                     android:layout_weight="80"/>
@@ -167,7 +173,8 @@
                     android:text="SUMBER LIMBAH" />
 
                 <Spinner
-                    android:layout_marginLeft="10dp"
+                    android:id="@+id/sumber"
+                    android:layout_marginStart="10dp"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
                     android:layout_weight="80"/>
@@ -193,14 +200,16 @@
                     android:text="JUMLAH DIHASILKAN/MASUK" />
 
                 <EditText
-                    android:layout_marginLeft="10dp"
+                    android:id="@+id/jumlah"
+                    android:layout_marginStart="10dp"
                     android:layout_width="100dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_weight="30" />
 
                 <Spinner
-                    android:layout_marginLeft="10dp"
+                    android:id="@+id/satuan"
+                    android:layout_marginStart="10dp"
                     android:layout_width="50dp"
                     android:layout_gravity="center"
                     android:layout_height="50dp"
@@ -215,6 +224,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
+                android:layout_marginBottom="20dp"
                 android:weightSum="100">
 
                 <TextView
@@ -227,7 +237,9 @@
                     android:text="CATATAN" />
 
                 <EditText
-                    android:layout_marginLeft="10dp"
+                    android:id="@+id/catatan"
+                    android:gravity="center"
+                    android:layout_marginStart="10dp"
                     android:layout_width="match_parent"
                     android:layout_gravity="center"
                     android:layout_height="150dp"
@@ -244,6 +256,7 @@
                 android:background="@color/colorPrimaryDark"
                 android:elevation="10dp"
                 android:text="Tambah Data"
+                android:gravity="center"
                 android:textColor="@android:color/white"
                 android:fontFamily="@font/source"
                 android:layout_marginLeft="20dp"

@@ -36,4 +36,9 @@ public interface ApiInterface {
     @POST("save_contract.php")
     Call<ApiResponse> addContract(@Field("uid") int uid, @Field("perusahaan") String perusahaan, @Field("tipe") String tipe,
                                   @Field("jenis") String jenisLimbah, @Field("lampiran") String lampiran);
+
+    @FormUrlEncoded
+    @POST("simpan_limbah.php")
+    Call<ApiResponse> addWaste(@Field("uid") int uid, @Field("kode") String kode, @Field("tanggal") String tanggal, @Field("masa") String masa,
+                               @Field("tps") String tps, @Field("sumber") String sumber, @Field("jumlah") String jumlah, @Field("catatan") String catatan);
 }
