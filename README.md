@@ -2,7 +2,7 @@
 Raja Limbah adalah aplikasi yang bertujuan untuk memonitoring data limbah di beberapa perusahaan yang menghasilkan limbah. Dibawah ini merupakan contoh aplikasinya.
 
 
-![alt text](https://github.com/meivaldi/TrackApps/blob/master/screenshoot/ss1.png?raw=true)
+![alt text](https://meivaldi.com/raja_limbah/ss1.png?raw=true)
 ![alt text](https://github.com/meivaldi/TrackApps/blob/master/screenshoot/ss2.png?raw=true)
 ![alt text](https://github.com/meivaldi/TrackApps/blob/master/screenshoot/ss3.png?raw=true)
 ![alt text](https://github.com/meivaldi/TrackApps/blob/master/screenshoot/ss4.png?raw=true)
